@@ -1,0 +1,36 @@
+header {
+    display: flex;
+    justify-content: center;
+    background: $color-bg-blue;
+    width: 100%;
+    padding: gem(30) 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+
+    .container {
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    nav {
+        display: flex;
+
+        a {
+            margin: 0 gem(25);
+        }
+    }
+
+    .logo {
+        display: block;
+        width: gem(130.77);
+        height: gem(26);
+    }
+
+    .medium-wrap {
+        display: block;
+        height: gem(15);
+        width: gem(19);
+    }
+}

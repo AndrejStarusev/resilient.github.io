@@ -1,0 +1,87 @@
+h1,
+.h1 {
+    font-family: GT Eesti Pro Display;
+    font-size: gem(44);
+    line-height: gem(56);
+    text-align: center;
+    color: $color-black;
+
+    .green {
+        color: $color-green;
+    }
+}
+
+h2 {
+    font-family: GT Eesti Pro Display;
+    font-size: 36px;
+    line-height: 42px;
+    color: $color-black;
+    font-weight: bold;
+}
+
+h3 {
+    font-family: GT Eesti Pro Display;
+    font-size: gem(22);
+    line-height: gem(27);
+    color: $color-black;
+    margin: gem(36) 0 gem(13)
+}
+
+.learn-more-link {
+    font-family: Gilroy;
+    font-size: gem(18);
+    line-height: gem(30);
+    color: $color-blue;
+    margin-bottom: gem(20);
+    display: block;
+    text-decoration: underline;
+}
+
+p,
+li {
+    font-family: Gilroy;
+    font-size: gem(18);
+    line-height: gem(30);
+    color: $color-olieve;
+
+    &.blue {
+        color: $color-blue;
+    }
+
+    &.italic {
+        font-style: italic;
+    }
+}
+
+li {
+    list-style: disc;
+    margin-bottom: gem(12);
+}
+
+ul { padding-left: gem(19); }
+
+a {
+    font-family: Gilroy;
+    font-size: 15px;
+    line-height: 30px;
+    color: $color-link;
+    transition: $base-color-transition;
+    text-decoration: none;
+
+    &:hover {
+        color: $color-blue;
+    }
+}
+
+span.green {
+    color: $color-green;
+}
+
+label {
+    font-family: Gilroy;
+    font-size: gem(12);
+    line-height: gem(30);
+    letter-spacing: gem(0.5);
+
+    color: $color-black;
+}

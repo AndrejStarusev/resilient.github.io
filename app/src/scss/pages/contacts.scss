@@ -1,0 +1,88 @@
+.contacts-hero {
+    background-color: $color-bg-blue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - #{gem(60)});
+    min-height: gem(850);
+    
+    .container {
+        margin-top: gem(30);
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    p {
+        max-width: gem(525);
+        margin: gem(21) gem(33);
+        text-align: center;
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        max-width: gem(517);
+
+        input {
+            margin-bottom: gem(22);
+            max-height: gem(68);
+        }
+        
+        textarea {
+            height: gem(136);
+        }
+
+        span.error {
+            color: red;
+            position: absolute;
+            display: none;
+            font-family: Gilroy;
+            font-size: gem(11);
+            line-height: gem(30);
+            opacity: 0.7;
+            bottom: gem(-7);
+        }
+
+        label {
+            position: relative;
+            &.error {
+                span.error { display: block; }
+            }
+        }
+    }
+
+    button {
+        margin: gem(40) auto gem(19);
+    }
+
+    a {
+        color: $color-blue;
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
+
+input, textarea {
+    width: 100%;
+    border: 1px solid transparent;
+    border-radius: gem(10);
+    padding: gem(19) gem(23);
+    resize: none;
+
+    font-family: Gilroy;
+    font-size: 16px;
+    line-height: 30px;
+
+    color: $color-olieve;
+
+    &:focus {
+        border: 1px solid $color-input-border-focus;
+    }
+
+    &.error {
+        border: 1px solid $color-red;
+    }
+}

@@ -1,0 +1,20 @@
+/*
+    screen width: 1500px
+    main container: 1146px
+    header/footer container: 1380px
+*/
+
+.container {
+    width: gem(1146);
+    display: flex;
+    justify-content: space-between;
+
+    &.xl {
+        width: gem(1390);
+    }
+}
+
+section {
+    display: flex;
+    justify-content: center;
+}

@@ -1,0 +1,135 @@
+.home-hero {
+    background: $color-bg-blue;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: gem(183) 0 gem(85);
+
+    h1 {
+        margin-bottom: gem(20);
+        max-width: gem(814);
+    }
+
+    img {
+        display: block;
+        height: gem(414);
+        width: gem(884);
+        margin-top: gem(57);
+    }
+}
+
+.what-we {
+    padding: gem(131) 0 gem(331);
+
+    img {
+        width: gem(466);
+        height: gem(411);
+        margin-top: gem(48);
+    }
+
+    p {
+        max-width: gem(573);
+
+        &:first-child {
+            margin-top: gem(10);
+        }
+    }
+
+    button { margin-top: gem(40); }
+}
+
+.more-than {
+    padding-bottom: gem(105);
+
+    h2 {
+        max-width: gem(460);
+        margin-bottom: gem(15);
+    }
+
+    p {
+        max-width: gem(430);
+
+        &.italic {
+            margin: gem(14) 0 gem(12);
+        }
+    }
+
+    button { margin-top: gem(38); }
+
+    img {
+        display: block;
+        height: gem(598);
+        width: gem(477);
+    }
+}
+
+.need-insurance {
+    padding-top: gem(140);
+    padding-bottom: gem(76);
+    background: $color-bg-green;
+
+    .right {
+        max-width: gem(430);
+        margin-left: gem(160);
+    }
+
+    .container { justify-content: flex-start; }
+    h2 { margin: gem(53) 0 gem(20); }
+    .italic { margin: gem(30) 0 gem(45); }
+}
+
+.gig-economy {
+    padding: gem(160) 0 gem(152);
+
+    .left {
+        max-width: gem(466);
+        padding-top: gem(13);
+    }
+
+    p { margin: gem(20) 0 gem(26); }
+
+    img {
+        display: block;
+        height: gem(598);
+        width: gem(477);
+    }
+
+    // temporary
+    ul { max-width: gem(400) }
+}
+
+.who-you-are {
+    background-color: $color-bg-blue;
+    padding: gem(140) 0 gem(76);
+
+    .right { max-width: gem(507); }
+    p { margin: gem(14) 0 gem(26); }
+}
+
+.contacts {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: gem(157) 0 gem(158);
+    position: relative;
+
+    p {
+        margin: gem(10) 0 gem(37);
+    }
+
+    img {
+        position: absolute;
+        left: 0;
+        right: 0;
+        width: 100%;
+        height: auto;
+
+        &:first-of-type {
+            top: 0;
+        }
+
+        &:last-of-type {
+            bottom: 0;
+        }
+    }
+}

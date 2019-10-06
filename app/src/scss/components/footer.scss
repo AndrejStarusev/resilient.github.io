@@ -1,0 +1,8 @@
+footer {
+    display: flex;
+    justify-content: center;
+    padding: gem(15) 0;
+    background-color: $color-black;
+
+    a { color: $color-footer-link; }
+}
