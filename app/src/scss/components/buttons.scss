@@ -12,7 +12,8 @@
     letter-spacing: gem(0.5);
     color: $color-white;
     border: none;
-    transition: $base-bgcolor-transition;
+    transition: $base-bgcolor-transition, box-shadow 0.2s ease-in;
+    box-shadow: 0 gem(6) gem(20) transparent;
 
     &.small {
         width: gem(212);
@@ -24,9 +25,11 @@
 
     &:hover {
         background-color: $color-green-dark;
+        box-shadow: 0 gem(6) gem(20) rgba(37, 188, 19, 0.35);
         
         &.blue {
             background-color: $color-blue-dark;
+            box-shadow: 0 gem(6) gem(20) rgba(94, 188, 255, 0.35);
         }
     }
 }

@@ -18,3 +18,30 @@ section {
     display: flex;
     justify-content: center;
 }
+
+.mobile-only {
+    display: none;
+}
+
+.desktop-only {
+    display: inline-block;
+}
+
+@media only screen and (max-width: 500px) {
+    .mobile-only {
+        display: inline-block;
+    }
+
+    .desktop-only {
+        display: none;
+    }
+
+    .container {
+        width: gem(425);
+        flex-direction: column;
+
+        &.xl {
+            width: gem(425);
+        }
+    }
+}

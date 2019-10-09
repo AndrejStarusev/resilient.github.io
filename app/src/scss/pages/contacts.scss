@@ -59,6 +59,8 @@
 
     a {
         color: $color-blue;
+        font-size: gem(19);
+        line-height: gem(38);
         &:hover {
             text-decoration: underline;
         }

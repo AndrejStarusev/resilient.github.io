@@ -1,9 +1,12 @@
 .home-hero {
     background: $color-bg-blue;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     padding: gem(183) 0 gem(85);
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 
     h1 {
         margin-bottom: gem(20);
@@ -76,6 +79,12 @@
     .container { justify-content: flex-start; }
     h2 { margin: gem(53) 0 gem(20); }
     .italic { margin: gem(30) 0 gem(45); }
+
+    img {
+        display: block;
+        height: gem(766);
+        width: gem(611);
+    }
 }
 
 .gig-economy {
@@ -104,6 +113,12 @@
 
     .right { max-width: gem(507); }
     p { margin: gem(14) 0 gem(26); }
+
+    img {
+        display: block;
+        height: gem(766);
+        width: gem(611);
+    }
 }
 
 .contacts {
@@ -131,5 +146,63 @@
         &:last-of-type {
             bottom: 0;
         }
+    }
+}
+
+
+// ========= RESPONSIVE
+
+@media only screen and (max-width: 500px) {
+    .home-hero {
+        padding-top: gem(157);
+
+        h1 {
+            max-width: 97.5%;
+            margin-bottom: gem(28);
+        }
+
+        p {
+            text-align: center;
+        }
+
+        img {
+            width: 100%;
+            height: auto;
+            margin-top: gem(71);
+        }
+    }
+
+    .what-we {
+        padding-top: gem(97);
+
+        img {
+            height: auto;
+            width: gem(444);
+        }
+
+        .container {
+            div {
+                &:last-child {
+                    display: flex;
+                    flex-direction: column;
+                    padding-top: gem(35);
+                }
+            }
+        }
+    }
+
+    .more-than {
+    }
+
+    .need-insurance {
+    }
+
+    .gig-economy {
+    }
+
+    .who-you-are {
+    }
+
+    .contacts {
     }
 }

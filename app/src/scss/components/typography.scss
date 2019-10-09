@@ -13,8 +13,8 @@ h1,
 
 h2 {
     font-family: GT Eesti Pro Display;
-    font-size: 36px;
-    line-height: 42px;
+    font-size: gem(36);
+    line-height: gem(42);
     color: $color-black;
     font-weight: bold;
 }
@@ -84,4 +84,21 @@ label {
     letter-spacing: gem(0.5);
 
     color: $color-black;
+}
+
+
+@media only screen and (max-width: 500px) {
+    h1, .h1 {
+        font-size: gem(43);
+        line-height: gem(51);
+    }
+
+    h2 {
+        font-size: gem(43);
+    }
+
+    p {
+        font-size: gem(23.437);
+        line-height: gem(40.625);
+    }
 }
