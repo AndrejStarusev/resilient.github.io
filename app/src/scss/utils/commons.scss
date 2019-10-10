@@ -27,7 +27,7 @@ section {
     display: inline-block;
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 768px) {
     .mobile-only {
         display: inline-block;
     }
@@ -37,11 +37,12 @@ section {
     }
 
     .container {
-        width: gem(425);
-        flex-direction: column;
-
+        width: gem(703);
+        // flex-direction: column;
+        
         &.xl {
-            width: gem(425);
+            // flex-direction: row;
+            width: gem(703);
         }
     }
 }

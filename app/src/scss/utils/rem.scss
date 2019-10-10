@@ -39,5 +39,6 @@
 
 // @include remBreakpoint(1280, 0); // desctop small
 // @include remBreakpoint(768, 0); // tablet
-@include remBreakpoint(480, 0); // mobile portrail
+@include remBreakpoint(768, 0); // tablet portrail
+@include remBreakpoint(500, 0); // mobile portrail
 

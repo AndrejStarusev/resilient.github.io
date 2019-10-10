@@ -87,18 +87,22 @@ label {
 }
 
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 768px) {
     h1, .h1 {
-        font-size: gem(43);
-        line-height: gem(51);
+        // font-size: gem(43);
+        // line-height: gem(51);
     }
 
     h2 {
-        font-size: gem(43);
+        // font-size: gem(43);
     }
 
-    p {
-        font-size: gem(23.437);
-        line-height: gem(40.625);
+    p, li {
+        font-size: gem(15);
+        line-height: gem(30);
+    }
+
+    ul {
+        padding-left: gem(16.9);
     }
 }

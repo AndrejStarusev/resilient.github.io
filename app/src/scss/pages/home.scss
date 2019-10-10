@@ -152,9 +152,9 @@
 
 // ========= RESPONSIVE
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 768px) {
     .home-hero {
-        padding-top: gem(157);
+        padding: gem(157) 0 gem(127);
 
         h1 {
             max-width: 97.5%;
@@ -168,16 +168,16 @@
         img {
             width: 100%;
             height: auto;
-            margin-top: gem(71);
+            margin-top: gem(124);
         }
     }
 
     .what-we {
-        padding-top: gem(97);
+        padding: gem(80) 0 gem(172);
 
         img {
             height: auto;
-            width: gem(444);
+            width: gem(360);
         }
 
         .container {
@@ -185,24 +185,113 @@
                 &:last-child {
                     display: flex;
                     flex-direction: column;
-                    padding-top: gem(35);
+                    padding-top: gem(0);
+                    padding-left: gem(8);
                 }
+            }
+        }
+
+        p {
+            &:first-child {
+                margin-top: gem(14);
+            }
+
+            &:last-of-type {
+                margin-top: gem(12);
             }
         }
     }
 
     .more-than {
+        padding-bottom: gem(94);
+        img {
+            height: gem(420);
+            width: auto;
+            margin-top: gem(-3);
+        }
+
+        p {
+            max-width: gem(332);
+        }
     }
 
     .need-insurance {
+        padding: gem(80) 0 gem(69.8);
+
+        img {
+            height: gem(416);
+            width: gem(332);
+        }
+
+        .right {
+            margin-left: gem(35);
+        }
+
+        h2 {
+            margin-top: 0;
+        }
+
+        .italic {
+            margin-bottom: gem(15);
+        }
     }
 
     .gig-economy {
+        padding: gem(97) 0 gem(73.6);
+
+        img {
+            height: gem(417);
+            width: gem(332);
+        }
+
+        .left {
+            padding-top: 0;
+            max-width: gem(326)
+        }
+
+        p {
+            margin: gem(15) 0;
+        }
     }
 
     .who-you-are {
+        padding: gem(81.5) 0 gem(58);
+
+        .container {
+            width: gem(700);
+        }
+
+        img {
+            height: gem(416);
+            width: gem(332);
+        }
+
+        .right {
+            margin-left: gem(35);
+        }
+
+        ul {
+            padding-left: gem(15);
+        }
+
+        p {
+            margin: gem(15) 0;
+        }
     }
 
     .contacts {
+        padding-top: gem(157);
+
+        h2 {
+            font-size: gem(44);
+            line-height: gem(56);
+        }
+
+        p {
+            font-size: gem(18);
+            line-height: gem(30);
+            max-width: gem(560);
+            text-align: center;
+        }
     }
 }
