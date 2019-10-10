@@ -37,8 +37,6 @@
 
 // Usually, base breakpoint is for desktop, so other (smaller) bps are specified via 'max-width' media query
 
-// @include remBreakpoint(1280, 0); // desctop small
-// @include remBreakpoint(768, 0); // tablet
 @include remBreakpoint(768, 0); // tablet portrail
 @include remBreakpoint(500, 0); // mobile portrail
 
