@@ -53,3 +53,19 @@ header {
         }
     }
 }
+
+@media only screen and (max-width: 768px) {
+    header {
+        padding: gem(28) 0 gem(35);
+
+        .medium-wrap {
+            height: gem(19);
+            width: gem(16);
+        }
+
+        .logo-wrap img {
+            width: gem(126);
+            height: gem(25);
+        }
+    }
+}

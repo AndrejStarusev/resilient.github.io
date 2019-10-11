@@ -30,6 +30,21 @@
         &.blue {
             background-color: $color-blue-dark;
             box-shadow: 0 gem(6) gem(20) rgba(94, 188, 255, 0.35);
+            color: $color-white;
+        }
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .button {
+        width: 100%;
+        height: gem(106);
+        font-size: gem(28);
+        line-height: gem(66);
+        border-radius: gem(16);
+
+        &.small {
+            width: 100%;
         }
     }
 }

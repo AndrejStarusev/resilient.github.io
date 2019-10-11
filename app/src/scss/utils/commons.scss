@@ -28,13 +28,6 @@ section {
 }
 
 @media only screen and (max-width: 768px) {
-    .mobile-only {
-        display: inline-block;
-    }
-
-    .desktop-only {
-        display: none;
-    }
 
     .container {
         width: gem(703);
@@ -43,6 +36,26 @@ section {
         &.xl {
             // flex-direction: row;
             width: gem(703);
+        }
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .desktop-only {
+        display: none !important;
+    }
+
+    .mobile-only {
+        display: inline-block;
+    }
+
+    .container {
+        width: gem(426);
+        flex-direction: column;
+        
+        &.xl {
+            flex-direction: row;
+            width: gem(426);
         }
     }
 }
