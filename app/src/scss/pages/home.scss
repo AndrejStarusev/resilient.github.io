@@ -122,11 +122,13 @@
 }
 
 .contacts {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
     padding: gem(157) 0 gem(158);
     position: relative;
+
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
 
     p {
         margin: gem(10) 0 gem(37);

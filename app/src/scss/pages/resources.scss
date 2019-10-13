@@ -1,0 +1,98 @@
+.resources-hero {
+    background: $color-bg-blue;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: gem(220) 0 gem(160);
+    text-align: center;
+
+    .container {
+        flex-direction: column;
+    }
+
+    h1 {
+        margin-bottom: gem(27);
+        font-size: gem(70);
+        line-height: gem(84);
+    }
+
+    p {
+        font-size: gem(23);
+        line-height: gem(38);
+    }
+}
+
+.contacts {
+    form {
+        display: flex;
+        box-shadow: 0 gem(5.12) gem(25) rgba(94, 188, 255, 0.15);
+        margin-top: gem(40);
+        width: gem(662);
+
+        label {
+            width: 100%;
+        }
+
+        input {
+            border-radius: gem(13);
+        }
+
+        .button {
+            width: gem(221);
+            z-index: 1;
+        }
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .resources-hero {
+        padding: gem(166) 0 gem(112);
+    }
+
+    .contacts {
+        form {
+            width: gem(564);
+        }
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .resources-hero {
+        padding: gem(163) 0 gem(80);
+
+        h1 {
+            font-size: gem(44);
+            line-height: gem(53);
+            margin-bottom: gem(30);
+        }
+    }
+
+    .contacts {
+        padding-bottom: gem(226);
+        form {
+            flex-direction: column;
+            width: 100%;
+            box-shadow: none;
+
+            label {
+                margin-bottom: gem(50);
+                box-shadow: 0 gem(5.12) gem(25) rgba(94, 188, 255, 0.15);
+                max-height: gem(106);
+                padding: 0;
+                display: flex;
+
+                input {
+                    width: gem(426);
+                    height: gem(106);
+                    padding-top: 0;
+                    padding-bottom: 0;
+                }
+            }
+
+            .button {
+                width: 100%;
+                height: gem(106);
+            }
+        }
+    }
+}
