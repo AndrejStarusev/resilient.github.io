@@ -89,3 +89,97 @@ input, textarea {
         border: 1px solid $color-red;
     }
 }
+
+@media only screen and (max-width: 768px) {
+    .contacts-hero {
+        padding: gem(172) 0;
+        align-items: flex-start;
+
+        .container {
+            margin-top: 0;
+        }
+
+        h1 {
+            font-size: gem(55);
+            line-height: gem(66);
+        }
+
+        p {
+            max-width: gem(564);
+            font-size: gem(18);
+            line-height: gem(30);
+            margin-bottom: gem(33);
+        }
+
+        form {
+            max-width: gem(564);
+
+            input {
+                margin-bottom: gem(20);
+            }
+
+            textarea {
+                height: gem(95);
+            }
+        }
+
+        button {
+            margin: gem(39) auto 0;
+        }
+
+        .mailto,
+        .mailto a {
+            font-size: gem(15);
+            line-height: gem(30);
+        }
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .contacts-hero {
+        padding: gem(163) 0 gem(112);
+        align-items: flex-start;
+
+        h1 {
+            font-size: gem(44);
+            line-height: gem(53);
+            max-width: gem(250);
+        }
+
+        p {
+            font-size: gem(23);
+            line-height: gem(40);
+            max-width: 100%;
+            margin: gem(31) 0 gem(42);
+        }
+
+        label {
+            font-size: gem(19);
+            line-height: gem(46);
+        }
+
+        form {
+            max-width: 100%;
+
+            input {
+                height: gem(106);
+                padding-top: 0;
+                padding-bottom: 0;
+            }
+
+            textarea {
+                height: gem(95);
+            }
+        }
+
+        button {
+            margin: gem(39) auto 0;
+        }
+
+        .mailto,
+        .mailto a {
+            font-size: gem(15);
+            line-height: gem(30);
+        }
+    }
+}
