@@ -132,12 +132,16 @@
         margin: gem(10) 0 gem(37);
     }
 
-    img {
+    picture {
         position: absolute;
         left: 0;
         right: 0;
         width: 100%;
         height: auto;
+
+        img {
+            width: 100%;
+        }
 
         &:first-of-type {
             top: 0;
@@ -393,38 +397,47 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        padding: gem(38) 0 gem(69.8);
+        padding: gem(38) 0 gem(109);
 
         img {
             width: auto;
-            height: gem(5.81);
-            margin-left: gem(0.37);
+            height: gem(581);
+            margin-left: gem(37);
+            margin-bottom: gem(10);
         }
 
         .right {
-            margin-left: gem(35);
+            margin-left: 0;
         }
 
         h2 {
-            margin-top: 0;
+            margin: 0 0 gem(33);
         }
 
         .italic {
-            margin-bottom: gem(15);
+            margin-bottom: gem(25);
         }
     }
 
     .gig-economy {
-        padding: gem(97) 0 gem(73.6);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: gem(125) 0 gem(73.6);
 
         img {
-            height: gem(417);
-            width: gem(332);
+            height: gem(597);
+            width: gem(463);
+            margin-left: gem(37);
+        }
+
+        h2 {
+            margin: gem(-7) 0 gem(20);
         }
 
         .left {
             padding-top: 0;
-            max-width: gem(326)
+            max-width: 100%
         }
 
         p {
@@ -433,43 +446,46 @@
     }
 
     .who-you-are {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
         padding: gem(81.5) 0 gem(58);
 
         .container {
-            width: gem(700);
+            width: gem(426);
         }
 
         img {
-            height: gem(416);
-            width: gem(332);
+            height: gem(580);
+            width: gem(462);
+            margin-left: gem(37);
+            margin-bottom: gem(12);
         }
 
         .right {
-            margin-left: gem(35);
-        }
-
-        ul {
-            padding-left: gem(15);
+            margin-left: 0;
         }
 
         p {
-            margin: gem(15) 0;
+            margin: gem(19) 0;
         }
     }
 
     .contacts {
-        padding-top: gem(157);
+        padding-top: gem(206);
+        text-align: center;
 
         h2 {
             font-size: gem(44);
-            line-height: gem(56);
+            line-height: gem(53);
         }
 
         p {
-            font-size: gem(18);
-            line-height: gem(30);
+            font-size: gem(23);
+            line-height: gem(47);
             max-width: gem(560);
             text-align: center;
+            margin: gem(20) 0 gem(45);
         }
     }
 }

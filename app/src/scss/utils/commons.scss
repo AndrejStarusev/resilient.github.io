@@ -20,7 +20,7 @@ section {
 }
 
 .mobile-only {
-    display: none;
+    display: none !important;
 }
 
 .desktop-only {
@@ -46,7 +46,7 @@ section {
     }
 
     .mobile-only {
-        display: inline-block;
+        display: inline-block !important;
     }
 
     .container {
