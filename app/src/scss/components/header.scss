@@ -39,6 +39,15 @@ header {
             display: block;
         }
     }
+
+    .right {
+        display: flex;
+        align-items: center;
+    }
+
+    #burger {
+        display: none;
+    }
 }
 
 @media only screen and (max-width: 768px) {
@@ -51,6 +60,39 @@ header {
         nav {
             // TODO
             display: none;
+        }
+
+        #burger {
+            display: flex;
+            flex-direction: column;
+            padding: gem(5);
+            margin-left: gem(32);
+            cursor: pointer;
+
+            span {
+                width: gem(26);
+                height: 2px;
+                border-radius: 1px;
+                background-color: $color-link;
+                margin: 2px 0;
+                transition: all 0.15s ease-out;
+            }
+
+            &.active {
+                span {
+                    &:first-child {
+                        transform: translateY(6px) rotate(45deg);
+                    }
+                    
+                    &:nth-child(2) {
+                        opacity: 0;
+                    }
+
+                    &:last-child {
+                        transform: translateY(-6px) rotate(-45deg);
+                    }
+                }
+            }
         }
     }
 }

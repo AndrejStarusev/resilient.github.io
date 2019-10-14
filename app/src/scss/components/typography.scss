@@ -86,16 +86,14 @@ label {
     color: $color-black;
 }
 
+@media only screen and (min-width: 1920px) {
+    a {
+        font-size: gem(19);
+        line-height: gem(38);
+    }
+}
 
 @media only screen and (max-width: 768px) {
-    h1, .h1 {
-        // font-size: gem(43);
-        // line-height: gem(51);
-    }
-
-    h2 {
-        // font-size: gem(43);
-    }
 
     p, li {
         font-size: gem(15);

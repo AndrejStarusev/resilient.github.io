@@ -28,10 +28,16 @@
         input {
             margin-bottom: gem(22);
             max-height: gem(68);
+            box-shadow: 0 gem(4) gem(20) rgba(94, 188, 255, 0.08);
         }
         
         textarea {
             height: gem(136);
+            box-shadow: 0 gem(4) gem(20) rgba(94, 188, 255, 0.08);
+        }
+
+        label span.error {
+            bottom: gem(-7);
         }
     }
 
@@ -43,6 +49,7 @@
         color: $color-blue;
         font-size: gem(19);
         line-height: gem(38);
+
         &:hover {
             text-decoration: underline;
         }
