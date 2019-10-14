@@ -72,6 +72,10 @@ label {
 
     &.error {
         span.error { display: block; }
+        input, textarea {
+            border: 1px solid $color-red;
+            box-shadow: none;
+        }
     }
 }
 
@@ -92,8 +96,8 @@ input, textarea {
         border: 1px solid $color-input-border-focus;
     }
 
-    &.error {
-        border: 1px solid $color-red;
+    &::placeholder {
+        opacity: 0.7;
     }
 }
 

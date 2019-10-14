@@ -36,6 +36,10 @@
         &:first-child {
             margin-top: gem(10);
         }
+        
+        &:last-of-type {
+            margin-top: gem(15);
+        }
     }
 
     button { margin-top: gem(40); }
@@ -371,7 +375,7 @@
             width: gem(463);
             height: auto;
             margin-left: gem(36);
-            margin-bottom: gem(-2);
+            margin-bottom: gem(10);
         }
 
         p {

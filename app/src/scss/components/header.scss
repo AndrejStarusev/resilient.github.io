@@ -33,10 +33,20 @@ header {
         display: block;
         height: gem(15);
         width: gem(19);
-        img {
+        svg {
             height: 100%;
             width: auto;
             display: block;
+
+            path {
+                transition: fill 0.15s ease-in;
+            }
+
+            &:hover {
+                path {
+                    fill: $color-blue;
+                }
+            }
         }
     }
 
