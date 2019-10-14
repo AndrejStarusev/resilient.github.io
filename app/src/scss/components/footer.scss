@@ -5,6 +5,19 @@ footer {
     background-color: $color-black;
 
     a { color: $color-footer-link; }
+    p {
+        font-size: gem(15);
+        color: $color-footer-link;
+    }
+}
+
+@media only screen and (min-width: 1920px) {
+    footer {
+        p {
+            font-size: gem(19.2);
+            line-height: gem(38);
+        }
+    }
 }
 
 @media only screen and (max-width: 500px) {

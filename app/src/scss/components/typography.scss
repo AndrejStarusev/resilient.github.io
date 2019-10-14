@@ -62,8 +62,8 @@ ul { padding-left: gem(19); }
 
 a {
     font-family: Gilroy;
-    font-size: 15px;
-    line-height: 30px;
+    font-size: gem(15);
+    line-height: gem(30);
     color: $color-link;
     transition: $base-color-transition;
     text-decoration: none;
