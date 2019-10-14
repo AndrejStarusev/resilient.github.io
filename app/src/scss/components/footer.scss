@@ -6,3 +6,13 @@ footer {
 
     a { color: $color-footer-link; }
 }
+
+@media only screen and (max-width: 500px) {
+    footer {
+        padding: gem(25) 0;
+        p, a {
+            font-size: gem(19);
+            line-height: gem(34);
+        }
+    }
+}

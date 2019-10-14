@@ -127,6 +127,10 @@ input, textarea {
             margin: gem(39) auto 0;
         }
 
+        .mailto a {
+            text-decoration: underline;
+        }
+
         .mailto,
         .mailto a {
             font-size: gem(15);
@@ -137,8 +141,9 @@ input, textarea {
 
 @media only screen and (max-width: 500px) {
     .contacts-hero {
-        padding: gem(163) 0 gem(112);
+        padding: gem(163) 0 gem(69);
         align-items: flex-start;
+        height: unset;
 
         h1 {
             font-size: gem(44);
@@ -156,30 +161,40 @@ input, textarea {
         label {
             font-size: gem(19);
             line-height: gem(46);
+
+            &:first-child {
+                margin-bottom: gem(10);
+            }
         }
 
         form {
             max-width: 100%;
 
             input {
-                height: gem(106);
-                padding-top: 0;
-                padding-bottom: 0;
+                height: gem(45);
+                width: gem(364);
+                padding: gem(30);
+                font-size: gem(23);
+                line-height: gem(47);
             }
 
             textarea {
-                height: gem(95);
+                height: gem(150);
+                width: gem(364);
+                padding: gem(30);
+                font-size: gem(23);
+                line-height: gem(47);
             }
         }
 
         button {
-            margin: gem(39) auto 0;
+            margin: gem(50) auto 0;
         }
 
         .mailto,
         .mailto a {
-            font-size: gem(15);
-            line-height: gem(30);
+            font-size: gem(19);
+            line-height: gem(34);
         }
     }
 }
