@@ -19,6 +19,80 @@
     p {
         font-size: gem(23);
         line-height: gem(38);
+        margin-bottom: gem(150);
+    }
+
+    .medium-card {
+        width: gem(1144);
+        height: gem(670);
+        border-radius: gem(10);
+        margin: 0 auto gem(40);
+        padding: gem(40) gem(40);
+        background-color: $color-white;
+        box-sizing: border-box;
+        box-shadow: 0px gem(4) gem(20) rgba(94, 188, 255, 0.15);
+
+        .logo-block {
+            display: flex;
+
+            img {
+                display: block;
+                border-radius: 50%;
+                height: gem(80);
+                width: gem(80);
+                margin-right: gem(16);
+                box-shadow: 0 gem(4) gem(20) rgba(94, 188, 255, 0.15);
+            }
+
+            .text-block {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                padding-top: gem(9);
+
+                span {
+                    font-family: Gilroy;
+                    font-size: gem(22);
+                    line-height: gem(27);
+                    color: $color-black;
+                    font-weight: 400;
+
+                    &.date {
+                        color: $color-gray;
+                        display: flex;
+                        align-items: center;
+
+                        span {
+                            color: $color-gray;
+                            margin: 0 gem(8) gem(8);
+                        }
+                    }
+                }
+            }
+        }
+
+        .banner {
+            height: gem(318);
+            width: 100%;
+            margin: gem(28) 0 gem(36);
+            object-fit: cover;
+            border-radius: gem(10);
+        }
+
+        h2 {
+            font-family: GT Eesti Pro Display;
+            font-size: gem(46);
+            line-height: gem(54);
+            color: $color-black;
+            text-align: left;
+            transition: color 0.15s ease-in;
+        }
+
+        &:hover {
+            h2 {
+                color: $color-blue;
+            }
+        }
     }
 }
 
@@ -47,6 +121,25 @@
 @media only screen and (max-width: 768px) {
     .resources-hero {
         padding: gem(166) 0 gem(112);
+
+        p {
+            margin-bottom: gem(102);
+        }
+
+        .medium-card {
+            width: 100%;
+            height: gem(653);
+            margin-bottom: gem(24);
+
+            .banner {
+                margin: gem(28) 0 gem(40);
+            }
+
+            h2 {
+                font-size: gem(36);
+                line-height: gem(42);
+            }
+        }
     }
 
     .contacts {
@@ -64,6 +157,33 @@
             font-size: gem(44);
             line-height: gem(53);
             margin-bottom: gem(30);
+        }
+
+        p {
+            margin-bottom: gem(119);
+        }
+
+        .medium-card {
+            padding: gem(30);
+            height: gem(398);
+
+            .logo-block {
+                img {
+                    height: gem(75);
+                    width: gem(75);
+                    margin-right: gem(18);
+                }
+            }
+
+            .banner {
+                margin: gem(37) 0 gem(27);
+                height: gem(105);
+            }
+
+            h2 {
+                font-size: gem(28);
+                line-height: gem(34);
+            }
         }
     }
 

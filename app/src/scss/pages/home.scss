@@ -34,7 +34,7 @@
         max-width: gem(573);
 
         &:first-child {
-            margin-top: gem(10);
+            margin-top: gem(80);
         }
         
         &:last-of-type {
@@ -51,6 +51,7 @@
     h2 {
         max-width: gem(460);
         margin-bottom: gem(15);
+        margin-top: gem(52);
     }
 
     p {
@@ -183,7 +184,7 @@
     }
 
     .what-we {
-        padding: gem(80) 0 gem(172);
+        padding: gem(80) 0 gem(100);
 
         img {
             height: auto;
@@ -202,9 +203,9 @@
         }
 
         p {
-            &:first-child {
-                margin-top: gem(14);
-            }
+            // &:first-child {
+                // margin-top: gem(14);
+            // }
 
             &:last-of-type {
                 margin-top: gem(12);
@@ -214,6 +215,12 @@
 
     .more-than {
         padding-bottom: gem(94);
+
+        h2 {
+            margin-bottom: gem(-3);
+            margin-top: 0;
+        }
+
         img {
             height: gem(420);
             width: auto;
