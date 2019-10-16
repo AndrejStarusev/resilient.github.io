@@ -87,6 +87,27 @@ label {
     color: $color-black;
 }
 
+.wpcf7-validation-errors {
+    font-family: Gilroy;
+    font-size: gem(20);
+    color: $color-red;
+}
+
+.wpcf7-not-valid-tip {
+    font-family: Gilroy;
+    position: absolute;
+    bottom: gem(-50);
+    font-family: Gilroy;
+    font-size: gem(11);
+    line-height: gem(30);
+    opacity: 0.7;
+}
+
+.wpcf7-response-output {
+    font-family: Gilroy;
+    font-size: gem(20);
+}
+
 @media only screen and (min-width: 1920px) {
     a {
         font-size: gem(19);
@@ -123,5 +144,9 @@ label {
 
     li {
         margin-bottom: gem(15);
+    }
+
+    .wpcf7-not-valid-tip {
+        bottom: gem(-70);
     }
 }

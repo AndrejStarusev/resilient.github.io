@@ -42,7 +42,10 @@
         }
     }
 
-    button { margin-top: gem(40); }
+    button {
+        display: none;
+        margin-top: gem(40);
+    }
 }
 
 .more-than {
@@ -62,7 +65,10 @@
         }
     }
 
-    button { margin-top: gem(38); }
+    button {
+        display: none;
+        margin-top: gem(38);
+    }
 
     img {
         display: block;
