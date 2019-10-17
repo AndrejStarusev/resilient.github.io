@@ -23,8 +23,8 @@
     }
 
     .medium-card {
-        width: gem(1144);
-        height: gem(670);
+        width: gem(894);
+        height: gem(643);
         border-radius: gem(10);
         margin: 0 auto gem(40);
         padding: gem(40) gem(40);
@@ -72,17 +72,17 @@
         }
 
         .banner {
-            height: gem(318);
+            height: gem(313);
             width: 100%;
-            margin: gem(28) 0 gem(36);
+            margin: gem(26) 0 gem(36);
             object-fit: cover;
             border-radius: gem(10);
         }
 
         h2 {
             font-family: GT Eesti Pro Display;
-            font-size: gem(46);
-            line-height: gem(54);
+            font-size: gem(36);
+            line-height: gem(42);
             color: $color-black;
             text-align: left;
             transition: color 0.15s ease-in;
@@ -114,6 +114,18 @@
         .button {
             width: gem(221);
             z-index: 1;
+        }
+    }
+}
+
+@media only screen and (min-width: 1920px) {
+    .resources-hero {
+        .medium-card {
+            height: gem(607);
+            .banner {
+                margin-top: gem(27);
+                height: gem(319);
+            }
         }
     }
 }
