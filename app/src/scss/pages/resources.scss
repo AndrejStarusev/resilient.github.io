@@ -25,7 +25,7 @@
     .medium-card {
         display: block;
         width: gem(680);
-        height: gem(447);
+        // height: gem(447);
         border-radius: gem(10);
         margin: 0 auto gem(25);
         padding: gem(25);
@@ -112,6 +112,10 @@
             border-radius: gem(13);
             height: 100%;
             box-sizing: border-box;
+
+            &:focus {
+                border-color: transparent;
+            }
         }
 
         .button {
@@ -123,12 +127,8 @@
 
 @media only screen and (min-width: 1920px) {
     .resources-hero {
-        .medium-card {
-            height: gem(607);
-            .banner {
-                margin-top: gem(27);
-                height: gem(319);
-            }
+        p {
+            margin-bottom: gem(84);
         }
     }
 }
@@ -180,13 +180,16 @@
 
         .medium-card {
             padding: gem(30);
-            height: gem(398);
 
             .logo-block {
                 img {
                     height: gem(75);
                     width: gem(75);
                     margin-right: gem(18);
+                }
+
+                .text-block {
+                    justify-content: center;
                 }
             }
 
